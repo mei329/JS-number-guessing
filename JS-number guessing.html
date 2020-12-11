@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Guessing</title>
+</head>
+<body>
+	<script>
+	var rand = Math.floor((Math.random() * 10) + 1);
+	var done = false;
+	var num;
+	while(!done){
+		num = window.prompt("Please guess the number");
+		if (num == rand){
+			alert("Congratulation!");
+			done = true;
+		}else{
+			alert("Uh Oh...");
+			continue;
+		}
+	}
+	</script>
+</body>
+</html>
